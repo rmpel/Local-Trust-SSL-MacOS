@@ -28,6 +28,22 @@ When you click **Trust**, instead of the broken background sudo flow it:
 Everything else (certificate generation, the trust-status check) is left to
 Local itself. On Windows and Linux the add-on does nothing at all.
 
+## Co-authored by Claude, Fable 5
+
+This project is written by myself and Claude, Fable 5, and tested by myself on LocalWP version 10.1.1
+
+## NO LIABILITY!!!!
+
+Use at your own risk!!!!
+
+Just because it works for me, does not mean it will work for you!
+
+Feel free to burn it down!
+
+I welcome every comment, positive as well as negative (though you might hurt my feelings and I might shout at you, but that's just because I care!)
+
+Feel free to contribute!
+
 ## Install (development)
 
 ```sh
