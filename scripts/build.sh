@@ -29,12 +29,13 @@ PRODUCT="$(node -p "require('./package.json').productName || require('./package.
 STAGE="$ROOT/build"
 PKG_DIR="$STAGE/$NAME"
 DIST="$ROOT/dist"
-ZIP="$DIST/${NAME}-v${VERSION}.zip"
+ZIP="$DIST/${NAME}-v${VERSION}.tgz"
 
 echo "==> Building $PRODUCT v$VERSION"
 
 # --- compile ------------------------------------------------------------------
 echo "==> Compiling TypeScript"
+npm install
 npm run build
 
 # --- clean --------------------------------------------------------------------
@@ -54,11 +55,11 @@ fi
 echo "==> Creating archive"
 (
 	cd "$STAGE"
-	zip -rq "$ZIP" "$NAME" -x '*/.DS_Store' '*/.git/*' '*/npm-debug.log*'
+	tar --exclude='.DS_Store' --exclude='.git' --exclude='npm-debug.log' -zcf "$ZIP" "$NAME"
 )
 
 SIZE="$(du -h "$ZIP" | cut -f1)"
 echo
 echo "==> Done: $ZIP  ($SIZE)"
-echo "    Install: unzip into Local's addons directory, then restart Local"
+echo "    Install: In LocalWP Select install from disk, then select the .tgz file"
 echo "    and enable '$PRODUCT' under Add-ons -> Installed."
