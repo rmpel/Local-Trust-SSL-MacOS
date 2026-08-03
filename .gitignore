@@ -1,0 +1,11 @@
+node_modules/
+lib/
+*.tgz
+.DS_Store
+
+# Build output
+dist/
+build/
+
+*.log
+npm-debug.log*
