@@ -33,6 +33,14 @@ ZIP="$DIST/${NAME}-v${VERSION}.tgz"
 
 echo "==> Building $PRODUCT v$VERSION"
 
+echo "==> Compiling TypeScript"
+# npx would fall back to the unrelated, deprecated "tsc" npm package when
+# typescript is not installed locally - always use the project-local binary.
+if [ ! -x node_modules/.bin/tsc ]; then
+	npm install --include=dev --no-audit --no-fund
+fi
+./node_modules/.bin/tsc
+
 # --- compile ------------------------------------------------------------------
 echo "==> Compiling TypeScript"
 npm install
