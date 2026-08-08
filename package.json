@@ -2,7 +2,7 @@
 	"name": "local-trust-ssl-macos",
 	"productName": "Trust SSL — macOS Fix",
 	"version": "1.0.0",
-	"author": "Remon Pel <remon@acato.nl>",
+	"author": "Remon Pel",
 	"keywords": [
 		"local-addon"
 	],
