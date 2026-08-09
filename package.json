@@ -1,14 +1,13 @@
 {
 	"name": "local-trust-ssl-macos",
 	"productName": "Trust SSL — macOS Fix",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "Remon Pel",
 	"keywords": [
 		"local-addon"
 	],
 	"bgColor": "#eaf3ff",
 	"icon": "icon.svg",
-	"slug": "local-trust-ssl-macos",
 	"description": "Works around the broken \"Trust\" SSL button in Local on macOS by running the trust command in a Terminal window, where sudo authentication actually works.",
 	"main": "lib/main.js",
 	"license": "GPL-3.0-or-later",
