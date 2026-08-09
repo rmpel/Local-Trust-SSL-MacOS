@@ -6,7 +6,7 @@
 	"keywords": [
 		"local-addon"
 	],
-	"bgColor": "#51bb7b",
+	"bgColor": "#eaf3ff",
 	"icon": "icon.svg",
 	"slug": "local-trust-ssl-macos",
 	"description": "Works around the broken \"Trust\" SSL button in Local on macOS by running the trust command in a Terminal window, where sudo authentication actually works.",

@@ -1,8 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 24" fill="none">
 	<!-- padlock body -->
-	<rect x="4" y="10" width="16" height="11" rx="2" fill="#ffffff"/>
+	<rect x="4" y="10" width="16" height="11" rx="2" fill="#0a84ff"/>
 	<!-- shackle -->
-	<path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+	<path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#0a84ff" stroke-width="2.2" stroke-linecap="round" fill="none"/>
 	<!-- checkmark on the lock body -->
-	<path d="M8.5 15.2l2.4 2.4 4.6-4.6" stroke="#51bb7b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+	<path d="M8.5 15.2l2.4 2.4 4.6-4.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+	<!-- classic Mac OS Finder face — this add-on is macOS-specific -->
+	<g transform="translate(15.6 0.8) scale(0.0125)">
+		<path fill="#4d66cc" d="M833 351l767 0 -145 307 -62 291 218 21 34 448 -812 0 0 -1067z"/>
+		<path fill="#89a1d4" d="M1598 351l607 0 0 1067 -565 0 -22 -459 -228 4 52 -306 156 -306z"/>
+		<path stroke="#000000" stroke-width="63" fill="none" d="M1628 1188c151,-3 263,-38 352,-91"/>
+		<path stroke="#09098f" stroke-width="63" fill="none" d="M1058 1094c171,88 349,108 537,96 M1208 528l0 161"/>
+		<path stroke="#000000" stroke-width="63" fill="none" d="M1792 528l0 161 M1726 188c-170,201 -317,464 -333,771l250 0c-63,209 -29,443 67,632"/>
+	</g>
 </svg>
